@@ -2,6 +2,7 @@
 int age;
 string genderAtBirth;
 decimal height; //in meters
+decimal height; //height (in meters) squared
 decimal weight; //in kilos
 decimal bmi; //weight * square of height
 #endregion
@@ -18,14 +19,16 @@ Console.WriteLine("First, your BMI must be calculated. First, please enter your 
 age = Convert.ToInt32(Console.ReadLine()); //age input
 Console.WriteLine("Thank you. Next, please enter the gender you were assigned at birth:");
 genderAtBirth = Console.ReadLine(); //genderAtBirth input
-Console.WriteLine("Thank you. Now please enter your height (in meters) below:");
+Console.WriteLine("Thank you. Now please enter your height (in centimmeters) below:");
 height = Convert.ToDecimal(Console.ReadLine()); //height input
 Console.WriteLine("Thank you. Lastly, please enter your weight (in kilograms) below:");
 weight = Convert.ToDecimal(Console.Read()); //weight input
 Console.WriteLine("Thank you. Calculating your BMI...");
 #endregion
 #region BMI Output
-bmi = weight / (height * height);
+heightm2 = ((height / 100) * (height / 100));
+Console.WriteLine("heightm2 = " + heightm2);
+bmi = weight / heightm2;
 Console.WriteLine("Your BMI is " + bmi + ".");
 #endregion
 #endregion
