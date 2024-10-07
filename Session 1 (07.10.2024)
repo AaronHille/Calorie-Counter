@@ -1,0 +1,31 @@
+#region Variables
+int age;
+string genderAtBirth;
+decimal height; //in meters
+decimal weight; //in kilos
+decimal bmi; //weight * square of height
+#endregion
+
+Console.WriteLine("Thank you. Now please enter your hieght (in meters) below:");
+height = Convert.ToDecimal(Console.ReadLine()); //height input
+Console.WriteLine(height * height);
+
+#region BMI Calculator
+#region Receving User Input
+Console.WriteLine("Thank you for choosing Calorie Counter.");
+Console.WriteLine("Before using the Calorie Counter services, a few things must be done on our end.");
+Console.WriteLine("First, your BMI must be calculated. First, please enter your age:");
+age = Convert.ToInt32(Console.ReadLine()); //age input
+Console.WriteLine("Thank you. Next, please enter the gender you were assigned at birth:");
+genderAtBirth = Console.ReadLine(); //genderAtBirth input
+Console.WriteLine("Thank you. Now please enter your height (in meters) below:");
+height = Convert.ToDecimal(Console.ReadLine()); //height input
+Console.WriteLine("Thank you. Lastly, please enter your weight (in kilograms) below:");
+weight = Convert.ToDecimal(Console.Read()); //weight input
+Console.WriteLine("Thank you. Calculating your BMI...");
+#endregion
+#region BMI Output
+bmi = weight / (height * height);
+Console.WriteLine("Your BMI is " + bmi + ".");
+#endregion
+#endregion
