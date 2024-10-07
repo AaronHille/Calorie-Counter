@@ -2,6 +2,7 @@
 Personal calorie counter program that may be developed into an app for my phone for ease of use.
 
 This repository utilises the MIT lisence.
+Please do not make any edits to the commits. If you would like to edit anything, please make a new commit.
 
 This program will be a [personal] calorie counter. I may make it into an app in the future so I can use it on my phone as well.
 Later on, once I have the program working properly and to my standards, I may have it connect to the internet for ISBN numbers and barcode scanning.
